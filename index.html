@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selim Şahin · Bilgisayar Mühendisliği Öğrencisi</title>
+  <meta name="description" content="Selim Şahin — İstanbul Medeniyet Üniversitesi Bilgisayar Mühendisliği öğrencisi. C ve Python ile oyun ve sistem projeleri geliştiriyor.">
+  <link rel="canonical" href="https://selim-sahin.github.io/">
+
+  <!-- Bağlantı paylaşılınca (LinkedIn, WhatsApp) görünen önizleme -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://selim-sahin.github.io/">
+  <meta property="og:title" content="Selim Şahin · Portfolyo">
+  <meta property="og:description" content="Bilgisayar Mühendisliği öğrencisi. Oyunlar, veri yapıları ve işlemci simülasyonu üzerine projeler.">
+  <meta property="og:image" content="https://selim-sahin.github.io/assets/profil.jpg">
+  <meta property="og:locale" content="tr_TR">
+
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f6fd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e0c1d" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='36' font-weight='700' text-anchor='middle' fill='white'%3ES%3C/text%3E%3C/svg%3E">
+
+  <!-- Tema "flaş"ını önler: CSS yüklenmeden önce doğru temayı seçer -->
+  <script>
+    (function () {
+      var tercih = 'sistem';
+      try { tercih = localStorage.getItem('tema') || 'sistem'; } catch (e) {}
+      var koyu = tercih === 'koyu' ||
+        (tercih !== 'acik' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      var kok = document.documentElement;
+      kok.setAttribute('data-theme', koyu ? 'dark' : 'light');
+      kok.setAttribute('data-tema-tercih', tercih);
+      kok.classList.add('js');
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="atla" href="#icerik">İçeriğe geç</a>
+  <div class="arka-plan" aria-hidden="true"></div>
+
+  <header class="ust-menu">
+    <nav class="kapsayici menu-ic" aria-label="Ana menü">
+      <a class="marka" href="#basa">Selim Şahin</a>
+      <ul class="menu-linkleri">
+        <li><a href="#hakkimda">Hakkımda</a></li>
+        <li><a href="#projeler">Projeler</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+      <div class="tema-anahtari" role="radiogroup" aria-label="Tema">
+        <button type="button" role="radio" data-tema="acik" aria-checked="false" title="Açık tema">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <span class="gizli">Açık</span>
+        </button>
+        <button type="button" role="radio" data-tema="koyu" aria-checked="false" title="Koyu tema">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+          <span class="gizli">Koyu</span>
+        </button>
+        <button type="button" role="radio" data-tema="sistem" aria-checked="true" title="Sistem teması">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+          <span class="gizli">Sistem</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="icerik">
+    <!-- GİRİŞ -->
+    <section class="giris kapsayici" id="basa" aria-labelledby="ad">
+      <img class="profil" src="assets/profil.jpg" width="640" height="640"
+           alt="Selim Şahin'in profil fotoğrafı" fetchpriority="high">
+      <div class="giris-metin">
+        <p class="selam">Merhaba, ben</p>
+        <h1 id="ad" class="gradyan-yazi">Selim Şahin</h1>
+        <p class="unvan">
+          <span class="gizli">Bilgisayar Mühendisliği öğrencisi, oyun geliştirici; C ve Python ile proje geliştiriyorum.</span>
+          <span class="unvan-donen" aria-hidden="true">Bilgisayar Mühendisliği Öğrencisi</span>
+        </p>
+        <div class="butonlar">
+          <a class="buton buton-ana" href="#projeler">Projelerim</a>
+          <a class="buton buton-ikincil cv-indir" href="assets/cv/selim-sahin-cv.pdf" download>CV'yi indir</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HAKKIMDA -->
+    <section class="bolum kapsayici belir" id="hakkimda" aria-labelledby="hakkimda-baslik">
+      <h2 id="hakkimda-baslik">Hakkımda</h2>
+      <!-- TASLAK: Selim düzeltecek -->
+      <p class="metin">
+        İstanbul Medeniyet Üniversitesi'nde Bilgisayar Mühendisliği 3. sınıf öğrencisiyim.
+        Programlamaya C ile başladım; projelerimin çoğunu C ile yazdım,
+        artık Python ile de geliştiriyorum.
+        En çok ilgimi çeken alan oyun geliştirme: Godot öğreniyorum ve bir gün kendi oyunumu
+        Steam'de yayınlamayı hedefliyorum. IEEE İMÜ öğrenci kolunun kurucularından biriyim.
+      </p>
+    </section>
+
+    <!-- PROJELER -->
+    <section class="bolum kapsayici belir" id="projeler" aria-labelledby="projeler-baslik">
+      <h2 id="projeler-baslik">Projeler</h2>
+      <ul class="proje-listesi" id="proje-listesi">
+        <!-- Kartlar data/projeler.json dosyasından js/main.js ile üretilir -->
+      </ul>
+      <noscript>
+        <p>Proje kartları için JavaScript gerekiyor. Projelerimin hepsi GitHub'da:
+          <a href="https://github.com/Selim-Sahin">github.com/Selim-Sahin</a></p>
+      </noscript>
+    </section>
+
+    <!-- YETENEKLER -->
+    <section class="bolum kapsayici belir" id="yetenekler" aria-labelledby="yetenekler-baslik">
+      <h2 id="yetenekler-baslik">Yetenekler</h2>
+      <div class="yetenek-gruplari">
+        <div class="yetenek-grubu">
+          <h3>Diller</h3>
+          <ul class="etiketler">
+            <li>C</li><li>Python</li><li>JavaScript</li><li>HTML &amp; CSS</li>
+          </ul>
+        </div>
+        <div class="yetenek-grubu">
+          <h3>Araçlar</h3>
+          <ul class="etiketler">
+            <li>Git &amp; GitHub</li><li>Raylib</li><li>Three.js</li><li>Emscripten</li>
+          </ul>
+        </div>
+        <div class="yetenek-grubu">
+          <h3>Konular</h3>
+          <ul class="etiketler">
+            <li>Veri yapıları ve algoritmalar</li><li>Oyun geliştirme</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section class="bolum kapsayici belir" id="cv" aria-labelledby="cv-baslik">
+      <h2 id="cv-baslik">CV</h2>
+      <div class="cv-kart">
+        <dl class="cv-ozet">
+          <div>
+            <dt>Eğitim</dt>
+            <dd>İstanbul Medeniyet Üniversitesi · Bilgisayar Mühendisliği, 3. sınıf</dd>
+          </div>
+          <div>
+            <dt>Topluluk</dt>
+            <dd>IEEE İMÜ Öğrenci Kolu · Kurucu üye</dd>
+          </div>
+          <div>
+            <dt>Öne çıkan projeler</dt>
+            <dd>Tarayıcıda çalışan 3B oyun (Three.js), veri yapılarıyla labirent oyunu (C → WebAssembly)</dd>
+          </div>
+          <div>
+            <dt>Aradığım</dt>
+            <dd>Yazılım ya da oyun geliştirme alanında staj</dd>
+          </div>
+        </dl>
+        <div class="cv-eylem">
+          <a class="buton buton-ana cv-indir" href="assets/cv/selim-sahin-cv.pdf" download>CV'yi indir (PDF)</a>
+          <p class="cv-yakinda" hidden>PDF sürümü yakında burada olacak.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section class="bolum kapsayici belir" id="iletisim" aria-labelledby="iletisim-baslik">
+      <h2 id="iletisim-baslik">İletişim</h2>
+      <p class="metin">Staj, proje ya da sadece merhaba demek için yazabilirsiniz.</p>
+      <ul class="iletisim-listesi">
+        <li>
+          <!-- E-posta botlardan korunsun diye parçalı yazıldı; JS birleştirir. YER TUTUCU: kullanıcı ve alan adını değiştir -->
+          <a class="iletisim-link eposta" href="#iletisim" data-k="EPOSTA-KULLANICI" data-a="ornek.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <span class="eposta-metin">E-posta (JavaScript gerekli)</span>
+          </a>
+        </li>
+        <li>
+          <!-- YER TUTUCU: LinkedIn adresini değiştir -->
+          <a class="iletisim-link" href="https://www.linkedin.com/in/LINKEDIN-KULLANICI-ADI/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a class="iletisim-link" href="https://github.com/Selim-Sahin" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+            <span>github.com/Selim-Sahin</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="alt-bilgi kapsayici">
+    <p>© <span id="yil">2026</span> Selim Şahin</p>
+    <p><a href="#basa">Başa dön ↑</a></p>
+  </footer>
+</body>
+</html>
