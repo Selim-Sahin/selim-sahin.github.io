@@ -1,0 +1,32 @@
+[
+  {
+    "baslik": "Kıvılcım",
+    "aciklama": "Basılı tut, bırak, zıpla: tarayıcıda çalışan 3B bir beceri oyunu. Robot, platformlar ve çim tamamen kodla üretiliyor; oyun telefona uygulama gibi eklenebiliyor ve çevrimdışı da açılıyor.",
+    "etiketler": [
+      "JavaScript",
+      "Three.js",
+      "WebGL",
+      "PWA"
+    ],
+    "gorsel": "assets/projeler/kivilcim.jpg",
+    "gorselAlt": "Kıvılcım oyunundan bir an: küçük robot bahçedeki platformlar arasında zıplıyor",
+    "not": "Fare, dokunmatik ekran ya da Boşluk tuşuyla oynanır.",
+    "canli": "https://selim-sahin.github.io/kivilcim-zipla/",
+    "repo": "https://github.com/Selim-Sahin/kivilcim-zipla"
+  },
+  {
+    "baslik": "Labirent Oyunu (Veri Yapıları)",
+    "aciklama": "Her oyunda DFS ve yığın (stack) ile yeni bir labirent üretiyor, BFS ve kuyruk (queue) ile en kısa yolu buluyor. Skor tablosu ikili arama ağacında; Merge/Quick Sort ve Binary Search de kullanılıyor. Emscripten ile WebAssembly'ye derlenip tarayıcıda çalışıyor.",
+    "etiketler": [
+      "C",
+      "Raylib",
+      "Veri Yapıları",
+      "WebAssembly"
+    ],
+    "gorsel": "assets/projeler/labirent.png",
+    "gorselAlt": "Labirent oyunundan bir an: üretilmiş labirentte oyuncu (yeşil) ve BFS ile bulunan çıkışa giden en kısa yol (mavi oklar)",
+    "not": "Klavye gerekir (W/A/S/D); telefonda oynanmaz.",
+    "canli": "https://selim-sahin.github.io/Veri-Yapilari-Labirent-Oyunu/",
+    "repo": "https://github.com/Selim-Sahin/Veri-Yapilari-Labirent-Oyunu"
+  }
+]
