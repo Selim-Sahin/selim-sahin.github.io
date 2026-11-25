@@ -123,7 +123,8 @@
   }
 
   var liste = document.getElementById('proje-listesi');
-  fetch('data/projeler.json')
+  // no-cache: tarayıcı kayıtlı kopyayı kullanmadan önce sunucuya güncel mi diye sorar
+  fetch('data/projeler.json', { cache: 'no-cache' })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (projeler) {
       projeler.forEach(function (p) { liste.append(kartYap(p)); });
