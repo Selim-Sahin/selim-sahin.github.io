@@ -300,7 +300,7 @@ h1, h2, h3 { line-height: 1.15; margin: 0; }
 /* ---------- Yetenekler ---------- */
 .yetenek-gruplari {
   display: grid; gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
 }
 .yetenek-grubu {
   background: var(--yuzey); border: 1px solid var(--cizgi); border-radius: var(--yaricap);
