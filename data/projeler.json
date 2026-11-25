@@ -15,7 +15,7 @@
     "repo": "https://github.com/Selim-Sahin/kivilcim-zipla"
   },
   {
-    "baslik": "Labirent Oyunu (Veri Yapıları)",
+    "baslik": "Labirent",
     "aciklama": "Her oyunda DFS ve yığın (stack) ile yeni bir labirent üretiyor, BFS ve kuyruk (queue) ile en kısa yolu buluyor. Skor tablosu ikili arama ağacında; Merge/Quick Sort ve Binary Search de kullanılıyor. Emscripten ile WebAssembly'ye derlenip tarayıcıda çalışıyor.",
     "etiketler": [
       "C",
