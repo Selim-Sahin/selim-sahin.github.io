@@ -79,6 +79,7 @@ body {
 
 img { max-width: 100%; display: block; }
 [hidden] { display: none !important; }
+[tabindex="-1"]:focus { outline: none; } /* menüden gidilen bölümde çerçeve çıkmasın */
 a { color: var(--vurgu); }
 h1, h2, h3 { line-height: 1.15; margin: 0; }
 

@@ -124,7 +124,7 @@
 
   var liste = document.getElementById('proje-listesi');
   // no-cache: tarayıcı kayıtlı kopyayı kullanmadan önce sunucuya güncel mi diye sorar
-  fetch('data/projeler.json', { cache: 'no-cache' })
+  var projelerHazir = fetch('data/projeler.json', { cache: 'no-cache' })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (projeler) {
       projeler.forEach(function (p) { liste.append(kartYap(p)); });
@@ -200,6 +200,33 @@
       });
     }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
     bolumler.forEach(function (b) { gozcu.observe(b); });
+  }
+
+  /* ---------- 7) Sayfa içi bağlantılar: adres çubuğunda #projeler gibi ekler kalmasın ---------- */
+  function bolumeGit(id, yumusak) {
+    var hedef = document.getElementById(id);
+    if (!hedef) return false;
+    hedef.scrollIntoView({ behavior: yumusak && !hareketAz.matches ? 'smooth' : 'auto', block: 'start' });
+    // Klavye ve ekran okuyucu kullananlar için odağı da bölüme taşı
+    if (!hedef.hasAttribute('tabindex')) hedef.setAttribute('tabindex', '-1');
+    hedef.focus({ preventScroll: true });
+    return true;
+  }
+  function adresiTemizle() {
+    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href^="#"]');
+    if (!a || e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) return;
+    var id = a.getAttribute('href').slice(1);
+    if (bolumeGit(id, true)) { e.preventDefault(); adresiTemizle(); }
+  });
+  // Biri siteyi ".../#projeler" gibi bir bağlantıyla açarsa: o bölüme git, sonra eki sil
+  // (Kartlar yüklenince sayfa uzar; kaydırmayı ondan sonra yap ki doğru yere gelsin)
+  if (location.hash) {
+    var ilkHedef = decodeURIComponent(location.hash.slice(1));
+    adresiTemizle();
+    projelerHazir.then(function () { bolumeGit(ilkHedef, false); });
   }
 
   var yil = document.getElementById('yil');
