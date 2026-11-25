@@ -31,6 +31,8 @@
       kok.setAttribute('data-theme', koyu ? 'dark' : 'light');
       kok.setAttribute('data-tema-tercih', tercih);
       kok.classList.add('js');
+      // Sayfa yenilenince tarayıcı eski kaydırma yerini hatırlamasın; her açılış en baştan başlasın
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
     })();
   </script>
 
@@ -38,7 +40,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="css/style.css?v=3">
-  <script src="js/main.js?v=4" defer></script>
+  <script src="js/main.js?v=5" defer></script>
 </head>
 <body>
   <a class="atla" href="#icerik">İçeriğe geç</a>

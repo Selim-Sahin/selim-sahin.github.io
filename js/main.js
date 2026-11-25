@@ -223,6 +223,8 @@
   });
   // Biri siteyi ".../#projeler" gibi bir bağlantıyla açarsa: o bölüme git, sonra eki sil
   // (Kartlar yüklenince sayfa uzar; kaydırmayı ondan sonra yap ki doğru yere gelsin)
+  // Yenilemede de sayfa en baştan açılsın (bazı tarayıcılar yine de eski yere kaydırabiliyor)
+  if (!location.hash) window.scrollTo(0, 0);
   if (location.hash) {
     var ilkHedef = decodeURIComponent(location.hash.slice(1));
     adresiTemizle();
