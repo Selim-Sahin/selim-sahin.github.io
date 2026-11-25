@@ -11,8 +11,8 @@
     "gorsel": "assets/projeler/kivilcim.jpg",
     "gorselAlt": "Kıvılcım oyunundan bir an: küçük robot bahçedeki platformlar arasında zıplıyor",
     "not": "Fare, dokunmatik ekran ya da Boşluk tuşuyla oynanır.",
-    "canli": "https://selim-sahin.github.io/kivilcim-zipla/",
-    "repo": "https://github.com/Selim-Sahin/kivilcim-zipla"
+    "canli": "https://selim-sahin.github.io/kivilcim/",
+    "repo": "https://github.com/Selim-Sahin/kivilcim"
   },
   {
     "baslik": "Labirent",
@@ -26,7 +26,7 @@
     "gorsel": "assets/projeler/labirent.png",
     "gorselAlt": "Labirent oyunundan bir an: üretilmiş labirentte oyuncu (yeşil) ve BFS ile bulunan çıkışa giden en kısa yol (mavi oklar)",
     "not": "Klavye gerekir (W/A/S/D); telefonda oynanmaz.",
-    "canli": "https://selim-sahin.github.io/Veri-Yapilari-Labirent-Oyunu/",
-    "repo": "https://github.com/Selim-Sahin/Veri-Yapilari-Labirent-Oyunu"
+    "canli": "https://selim-sahin.github.io/labirent/",
+    "repo": "https://github.com/Selim-Sahin/labirent"
   }
 ]
